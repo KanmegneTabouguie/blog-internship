@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Manage Blog Posts</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Brusher&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="home.html">Ktayl-Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html#about">
+            <i class="fas fa-user"></i> About Me
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home.html#skills">
+            <i class="fas fa-tools"></i> Skills
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home.html#projects">
+            <i class="fas fa-project-diagram"></i> Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home.html#service">
+            <i class="fas fa-cogs"></i> Service
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">
+            <i class="fas fa-blog"></i> Blog
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home.html#contact">
+            <i class="fas fa-envelope"></i> Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Admin Section -->
+<section id="admin" class="py-5 text-navy">
+  <div class="container mt-5 pt-5">
+    <h2 class="text-center">Admin - Manage Blog Posts</h2>
+    <p class="text-center">Create, Read, Update, and Delete blog posts or articles.</p>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <form id="create-post-form">
+          <h4>Create New Post</h4>
+          <div class="form-group">
+            <label for="postTitle">Title</label>
+            <input type="text" class="form-control" id="postTitle" placeholder="Enter title" required>
+          </div>
+          <div class="form-group">
+            <label for="postContent">Content</label>
+            <textarea class="form-control" id="postContent" rows="4" placeholder="Enter content" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="postImage">Image URL</label>
+            <input type="url" class="form-control" id="postImage" placeholder="Enter image URL">
+          </div>
+          <button type="submit" class="btn btn-primary">Create Post</button>
+        </form>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h4>Existing Posts</h4>
+        <div id="posts-list" class="list-group">
+          <!-- Dynamic list of posts will be loaded here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-navy text-white text-center py-3">
+  <div class="container">
+    &copy; 2024 Ktayl-Portfolio 
+  </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JS for CRUD operations -->
+<script src="admin.js"></script>
+</body>
+</html>

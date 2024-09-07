@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Brusher&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Ktayl-Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">
+            <i class="fas fa-user"></i> About Me
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">
+            <i class="fas fa-tools"></i> Skills
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">
+            <i class="fas fa-project-diagram"></i> Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#service">
+            <i class="fas fa-cogs"></i> Service
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">
+            <i class="fas fa-blog"></i> Blog
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">
+            <i class="fas fa-envelope"></i> Contact
+          </a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- About Me Section -->
+<section id="about" class="jumbotron text-center bg-lightblue text-navy">
+  <div class="container">
+    <div id="initial-content">
+      <h1 class="display-4">About Me</h1>
+      <p class="lead">Welcome! I'm Tabouguie Laurel, a passionate web developer with two years of experience in crafting exceptional digital experiences. My journey in web development began with a love for problem-solving and a desire to create meaningful solutions that empower businesses and individuals alike.</p>
+      <!-- Download CV Button -->
+      <div class="mt-4">
+        <a href="KANMEGNE-TABOUGUIE-ANDRE-LAUREL-YVAN-b3.pdf" download class="btn btn-primary btn-lg">Download CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="bg-light py-5 text-navy">
+  <div class="container">
+    <h2 class="text-center mb-5">Skills</h2>
+    <div class="row">
+      <!-- Frontend Card -->
+      <div class="col-md-3">
+        <div class="card border-0 bg-transparent mb-4 skill-card">
+          <div class="card-body text-center">
+            <i class="fab fa-html5 fa-3x mb-3"></i>
+            <h5 class="card-title mb-3">Frontend</h5>
+            <p class="card-text mb-0">HTML, CSS, JavaScript</p>
+            <p class="card-text mb-0">React etc..</p>
+          </div>
+        </div>
+      </div>
+      <!-- Backend Card -->
+      <div class="col-md-3">
+        <div class="card border-0 bg-transparent mb-4 skill-card">
+          <div class="card-body text-center">
+            <i class="fab fa-node-js fa-3x mb-3"></i>
+            <h5 class="card-title mb-3">Backend</h5>
+            <p class="card-text mb-0">Node.js,Python,java</p>
+            <p class="card-text mb-0">Golang,Php,c#</p>
+          </div>
+        </div>
+      </div>
+      <!-- Database Card -->
+      <div class="col-md-3">
+        <div class="card border-0 bg-transparent mb-4 skill-card">
+          <div class="card-body text-center">
+            <i class="fas fa-database fa-3x mb-3"></i>
+            <h5 class="card-title mb-3">Databases</h5>
+            <p class="card-text mb-0">MySQL, MongoDB</p>
+            <p class="card-text mb-0">PostgreSQL,Sqlite</p>
+          </div>
+        </div>
+      </div>
+      <!-- Other Card -->
+      <div class="col-md-3">
+        <div class="card border-0 bg-transparent mb-4 skill-card">
+            <div class="card-body text-center">
+                <i class="fas fa-tools fa-3x mb-3"></i>
+                <h5 class="card-title mb-3">Others</h5>
+                <p class="card-text mb-0">Git,Docker</p>
+                <p class="card-text mb-0">Agile Methodologies etc..</p>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+  </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 text-navy">
+      <div class="container">
+          <h2 class="text-center">Projects</h2>
+          <p class="text-center">Feature well-designed and well-documented projects that demonstrate your abilities. Use clear descriptions, screenshots, and even live demos if possible. Focus on projects that align with your career goals.</p>
+          <div id="projects-container" class="row"></div>
+          <div class="text-center mt-4">
+              <button id="viewMoreBtn" class="btn btn-primary">Load More</button>
+          </div>
+      </div>
+  </section>
+
+<!-- Modal -->
+<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="projectModalBody">
+        <!-- Project details will be dynamically inserted here -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- Add any additional buttons here -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Services Section -->
+<section id="service" class="bg-lightblue text-black py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Services</h2>
+    <p class="text-center mb-5">Explore the services I offer to help you achieve your goals.</p>
+    <div class="row justify-content-center">
+      <!-- Web Development -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center border-0 shadow" style="background-color: #007bff;">
+          <div class="card-body">
+            <h5 class="card-title mb-3"><i class="fas fa-laptop-code"></i> Web Development</h5>
+            <ul class="list-unstyled">
+              <li>Front-End Development</li>
+              <li>Back-End Development</li>
+              <li>Custom Web Applications</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- UI/UX Design -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center border-0 shadow" style="background-color: #007bff;">
+          <div class="card-body">
+            <h5 class="card-title mb-3"><i class="fas fa-paint-brush"></i> UI/UX Design</h5>
+            <ul class="list-unstyled">
+              <li>UI Design</li>
+              <li>Responsive Design</li>
+              <li>Prototyping</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- No-Code/CMS Development -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center border-0 shadow" style="background-color: #007bff;">
+          <div class="card-body">
+            <h5 class="card-title mb-3"><i class="fas fa-cogs"></i> No-Code/CMS</h5>
+            <ul class="list-unstyled">
+              <li>No-Code Website Builders</li>
+              <li>Content Management Systems (CMS)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Data Analytics, Reporting, and Web Scraping -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center border-0 shadow" style="background-color: #007bff;">
+          <div class="card-body">
+            <h5 class="card-title mb-3"><i class="fas fa-chart-line"></i> Data Insights</h5>
+            <ul class="list-unstyled">
+              <li>Data Preprocessing</li>
+              <li>Integration Analytics Tools</li>
+              <li>Custom Data Visualization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Performance and Optimization -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center border-0 shadow" style="background-color: #007bff;">
+          <div class="card-body">
+            <h5 class="card-title mb-3"><i class="fas fa-search"></i> Tuning</h5>
+            <ul class="list-unstyled">
+              <li>Performance Optimization</li>
+              <li>SEO Best Practices</li>
+              <li>Maintenance and Support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Database -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center border-0 shadow" style="background-color: #007bff;">
+          <div class="card-body">
+            <h5 class="card-title mb-3"><i class="fas fa-database"></i> Database</h5>
+            <ul class="list-unstyled">
+              <li>Database Design and Architecture</li>
+              <li>Database Development</li>
+              <li>Data Migration and Integration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="bg-primary text-black py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow-lg border-0 p-4">
+          <h2 class="text-center mb-4">Get in Touch</h2>
+          <p class="text-center mb-4">Let's connect and discuss how we can collaborate.</p>
+          <form action="mailto:kanmegnea@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+              <input type="text" class="form-control rounded-pill" name="Your Name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control rounded-pill" name="Your Email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control rounded" name="Your Message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block rounded-pill">Send Message</button>
+          </form>
+          <div class="text-center mt-4">
+            <p class="mb-1">Or reach out to me via:</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="mailto:kanmegnea@gmail.com" class="text-navy"><i class="fas fa-envelope"></i> Email</a></li>
+              <li class="list-inline-item"><a href="https://linkedin.com/in/laurel-kanmegne-2a861425a" class="text-navy"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+              <li class="list-inline-item"><a href="https://github.com/KanmegneTabouguie" class="text-navy"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-navy text-white text-center py-3">
+  <div class="container">
+    &copy; 2024 Ktayl-Portfolio 
+  </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="project.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

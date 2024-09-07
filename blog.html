@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Blog</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Brusher&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes slideInLeft {
+      from { transform: translateX(-100%); }
+      to { transform: translateX(0); }
+    }
+    .slide-in-left {
+      animation: slideInLeft 2s ease-in;
+    }
+    @keyframes slideInRight {
+      from { transform: translateX(100%); }
+      to { transform: translateX(0); }
+    }
+    .slide-in-right {
+      animation: slideInRight 2s ease-in;
+    }
+    .parallax {
+      background-image: url('https://images.pexels.com/photos/6212801/pexels-photo-6212801.jpeg?auto=compress&cs=tinysrgb&w=400'); /* Replace with your image URL */
+      height: 500px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .company-presentation h3:hover {
+      color: #007bff;
+      transition: color 0.3s ease;
+    }
+    .company-presentation p:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="home.html">Ktayl-Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html#about">
+            <i class="fas fa-user"></i> About Me
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home.html#skills">
+            <i class="fas fa-tools"></i> Skills
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home.html#projects">
+            <i class="fas fa-project-diagram"></i> Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home.html#service">
+            <i class="fas fa-cogs"></i> Service
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="blog.html">
+            <i class="fas fa-blog"></i> Blog
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home.html#contact">
+            <i class="fas fa-envelope"></i> Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Blog Section -->
+<section id="blog" class="py-5 text-navy">
+  <div class="container mt-5 pt-5">
+    <h2 class="text-center fade-in">Blog</h2>
+    <p class="text-center fade-in">Welcome to my blog! Here, I share my thoughts, experiences, and insights on web development, technology, and my first experience as intern in a startup.</p>
+    <div id="posts-container" class="row">
+      <!-- Dynamic blog posts will be loaded here -->
+    </div>
+  </div>
+</section>
+
+<!-- Parallax Section -->
+<div class="parallax"></div>
+
+<!-- Company Presentation Section -->
+<div class="company-presentation my-5" style="background-color: #f8f9fa; padding: 2rem; border-radius: 0.25rem;">
+  <h2 class="text-center fade-in">Company Presentation</h2>
+  <div class="row">
+    <div class="col-md-6 slide-in-left" style="padding: 1rem;">
+      <h3>À propos de l'entreprise Gotham</h3>
+      <p>
+        <strong>Mission:</strong> Améliorer leurs applications web existantes et travailler sur de nouvelles fonctionnalités..
+      </p>
+      <p>
+        <strong>Vision:</strong> Être un leader dans l'industrie de la restauration en repoussant continuellement les limites de la technologie et de la créativité.
+      </p>
+      <p>
+        <strong>Historique:</strong> Fondée en 2010, l'entreprise est passée d'une petite startup à un nom reconnu dans l'industrie technologique, connue pour ses solutions de pointe et son service exceptionnel. 
+      </p>
+      <p>
+        <strong>Industry:</strong> Service
+      </p>
+      <p>
+        <strong>Location:</strong> Remote,France
+      </p>
+    </div>
+    <div class="col-md-6 slide-in-right" style="padding: 1rem;">
+      <h3>Work Environment</h3>
+      <p>
+        <strong>Culture de l'entreprise:</strong>  L'entreprise est fière de promouvoir un environnement de travail collaboratif et inclusif où l'innovation et la créativité sont encouragées.
+      </p>
+      <p>
+        <strong>Structure de l'équipe:</strong> L'équipe est composée de professionnels diversifiés, y compris des développeurs, des designers, des chefs de projet et des spécialistes QA, tous travaillant ensemble pour livrer des résultats exceptionnels.
+      </p>
+      <p>
+        <strong>Projets/Clients Notables:</strong> L'entreprise a travaillé sur leur plateforme Fedhub, en mettant en œuvre des améliorations SEO pour la plateforme ainsi qu'un outil de web scraping pour l'extraction de données afin de remplir la plateforme.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-navy text-white text-center py-3">
+  <div class="container">
+    &copy; 2024 Ktayl-Portfolio 
+  </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="blog.js"></script>
+</body>
+</html>

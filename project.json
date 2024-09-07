@@ -1,0 +1,120 @@
+{
+    "projects": [
+      {
+        "title": "Task Manager App",
+        "image": "https://images.unsplash.com/photo-1614029951539-4b1ce4821be8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRhc2slMjBtYW5hZ2VtZW50JTIwYXBwbHxlbnwwfHwwfHx8MA%3D%3D",
+        "description": "A web-based application for managing personal and team tasks. Users can create, edit, delete tasks, and assign them to team members.",
+        "technologies": {
+          "frontend": ["React", "Redux", "Bootstrap"],
+          "backend": ["Node.js", "Express.js"],
+          "database": "MongoDB",
+          "auth": "JWT",
+          "deployment": ["Docker", "AWS"]
+        },
+        "problem": "Difficulty in task management leading to missed deadlines and reduced productivity.",
+        "solution": "Developed an app providing intuitive task management, including user authentication, task CRUD operations, assignment, and real-time notifications.",
+        "features": [
+          "User authentication",
+          "Task CRUD",
+          "Team task assignment",
+          "Progress tracking",
+          "Real-time notifications"
+        ],
+        "outcome": "Successfully deployed, used by small teams with positive feedback for its ease of use and effectiveness.",
+        "repo": "https://github.com/username/task-manager"
+      },
+      {
+        "title": "E-commerce Platform",
+        "image": "https://t3.ftcdn.net/jpg/02/98/24/22/240_F_298242263_hgnvWvXPCandl0PAAECIfLKlQWfDvf8S.jpg",
+        "description": "A full-featured e-commerce platform enabling users to browse products, manage their cart, and complete purchases online.",
+        "technologies": {
+          "frontend": ["Angular", "Bootstrap"],
+          "backend": ["Node.js", "Express.js"],
+          "database": "PostgreSQL",
+          "auth": "OAuth",
+          "deployment": ["Docker", "Heroku"]
+        },
+        "problem": "Lack of a streamlined and user-friendly online shopping experience.",
+        "solution": "Created a responsive e-commerce site with secure payment processing and a user-friendly interface.",
+        "features": [
+          "Product browsing",
+          "Cart management",
+          "Secure payment processing",
+          "User reviews",
+          "Order tracking"
+        ],
+        "outcome": "Increased user engagement and sales, receiving positive feedback for the intuitive interface.",
+        "repo": "https://github.com/username/ecommerce-platform"
+      },
+      {
+        "title": "Social Networking Site",
+        "image": "https://t3.ftcdn.net/jpg/01/22/84/66/240_F_122846656_3ZRwrShsn7ukfcHP3gQPjGBeXYHSdeuX.jpg",
+        "description": "A social networking platform for users to connect, share posts, and communicate in real-time.",
+        "technologies": {
+          "frontend": ["Vue.js", "Vuetify"],
+          "backend": ["Django", "Django REST Framework"],
+          "database": "MySQL",
+          "auth": "JWT",
+          "deployment": ["Docker", "DigitalOcean"]
+        },
+        "problem": "Need for a modern platform for social interaction and content sharing.",
+        "solution": "Built a site with real-time chat, post sharing, and user connections.",
+        "features": [
+          "User profiles",
+          "Post creation and sharing",
+          "Real-time chat",
+          "User connections",
+          "Notifications"
+        ],
+        "outcome": "Successfully launched with growing user base and active engagement.",
+        "repo": "https://github.com/username/social-network"
+      },
+      {
+        "title": "Blog Platform",
+        "image": "https://t3.ftcdn.net/jpg/01/26/41/20/240_F_126412096_ArfO2CTpDhmnd8jl9gygnLNRAjvBBh2B.jpg",
+        "description": "A blogging platform allowing users to write, edit, and publish articles with comments and tags.",
+        "technologies": {
+          "frontend": ["React", "Tailwind CSS"],
+          "backend": ["Flask", "SQLAlchemy"],
+          "database": "SQLite",
+          "auth": "JWT",
+          "deployment": ["Docker", "AWS"]
+        },
+        "problem": "Limited options for content creators to publish and manage their blogs.",
+        "solution": "Developed a platform for easy article management, with user authentication and commenting system.",
+        "features": [
+          "Article creation and editing",
+          "Tagging system",
+          "Commenting system",
+          "User profiles",
+          "Article search"
+        ],
+        "outcome": "Successfully implemented, receiving positive feedback from users for ease of use.",
+        "repo": "https://github.com/username/blog-platform"
+      },
+      {
+        "title": "Online Learning Portal",
+        "image": "https://media.istockphoto.com/id/1166019434/fr/photo/tutoriel-en-ligne-formation-et-concept-dapprentissage-en-ligne-luniversit%C3%A9-d%C3%A9tudiant.webp?b=1&s=612x612&w=0&k=20&c=dEw73iPyMcaw-x7Xr6tnq00g4PFwqb5V9skUOk74m9c=",
+        "description": "An online learning portal providing courses, quizzes, and progress tracking for students.",
+        "technologies": {
+          "frontend": ["Svelte", "Bootstrap"],
+          "backend": ["Node.js", "Express.js"],
+          "database": "MongoDB",
+          "auth": "JWT",
+          "deployment": ["Docker", "AWS"]
+        },
+        "problem": "Need for an accessible platform for remote learning.",
+        "solution": "Built a portal offering courses with interactive quizzes and progress tracking.",
+        "features": [
+          "Course management",
+          "Interactive quizzes",
+          "Progress tracking",
+          "User profiles",
+          "Certificate generation"
+        ],
+        "outcome": "Widely adopted by educational institutions, praised for its interactive features.",
+        "repo": "https://github.com/username/learning-portal"
+      }
+    ]
+  }
+  
