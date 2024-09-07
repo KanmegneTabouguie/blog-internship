@@ -13,9 +13,9 @@ Ce projet est un **blog** dans lequel je partage mon expérience lors de mon pre
 
 
 ## Pages Importantes
-- **Page principale (Portfolio) :** Pour accéder aux détails de mon portfolio et trouver un lien vers la section blog sur mon expérience de stage, rendez-vous sur http://localhost:8000/home.php
+- **Page principale (Portfolio) :** Pour accéder aux détails de mon portfolio et trouver un lien vers la section blog sur mon expérience de stage, rendez-vous sur http://localhost:8000/home.html
 - **Section Blog (Expérience de stage) :** Ouvrez votre navigateur et allez sur http://localhost:8000/blog.html pour voir les articles du blog.
-- **Admin Panel :** Pour créer, éditer ou supprimer des articles de blog, accédez au tableau de bord administrateur via http://localhost:8000/admin.php
+- **Admin Panel :** Pour créer, éditer ou supprimer des articles de blog, accédez au tableau de bord administrateur via http://localhost:8000/admin.html
 
 ## Technologies Utilisées
 - **Frontend :**
