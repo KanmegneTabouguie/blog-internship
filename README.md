@@ -10,12 +10,12 @@ Ce projet est un **blog** dans lequel je partage mon expérience lors de mon pre
 - **Blog Personnel :** Centré sur mon expérience de stage chez Gotham.
 - **Tableau de Bord Admin :** Permet de créer, modifier et gérer les articles sur les expériences, projets et réflexions.
 - **Accès Public :** Une page principale où les utilisateurs peuvent accéder à mon portfolio et à une section dédiée à mon expérience de stage.
-- **Génération de Pages Statiques :** Les pages HTML sont générées dynamiquement avec les données fournies, ce qui améliore le SEO pour chaque expérience partagée.
+
 
 ## Pages Importantes
-- **Page principale (Portfolio) :** Pour accéder aux détails de mon portfolio et trouver un lien vers la section blog sur mon expérience de stage, rendez-vous sur [http://localhost:8000/home.php](http://localhost:8000/home.php).
-- **Section Blog (Expérience de stage) :** Ouvrez votre navigateur et allez sur [http://localhost:8000/blog.html](http://localhost:8000/blog.html) pour voir les articles du blog.
-- **Admin Panel :** Pour créer, éditer ou supprimer des articles de blog, accédez au tableau de bord administrateur via [http://localhost:8000/admin.php](http://localhost:8000/admin.php).
+- **Page principale (Portfolio) :** Pour accéder aux détails de mon portfolio et trouver un lien vers la section blog sur mon expérience de stage, rendez-vous sur http://localhost:8000/home.php
+- **Section Blog (Expérience de stage) :** Ouvrez votre navigateur et allez sur http://localhost:8000/blog.html pour voir les articles du blog.
+- **Admin Panel :** Pour créer, éditer ou supprimer des articles de blog, accédez au tableau de bord administrateur via http://localhost:8000/admin.php
 
 ## Technologies Utilisées
 - **Frontend :**
@@ -32,14 +32,14 @@ Ce projet est un **blog** dans lequel je partage mon expérience lors de mon pre
 ## Contenu du Blog
 - **Introduction à Gotham :** Mes premières impressions en tant que stagiaire chez Gotham.
 - **Travail sur des Projets Réels :** Mes contributions à l'amélioration de la plateforme, notamment l'optimisation SEO et l'extraction de données via le web scraping.
-- **Outils Utilisés :** Utilisation de **Flask** et **BeautifulSoup** pour automatiser la collecte des données des restaurants.
+- **Outils Utilisés :** Utilisation de **Flask**, **BeautifulSoup**,**react + Tyscript** ,**Laravel**,**Mysql database** pour les differents projets
 - **Défis Rencontrés :** Discussion sur les problèmes rencontrés, notamment avec le chargement dynamique des contenus et la gestion des URLs d'images.
 - **Résultats Finaux :** Réflexion sur les projets réalisés, comme la génération de pages statiques pour l'optimisation SEO, et sur ma croissance en tant que développeur.
 
 ## Installation et Configuration
 1. **Cloner le dépôt :**
    ```bash
-   git clone (https://github.com/KanmegneTabouguie/blog-internship.git)
+   git clone https://github.com/KanmegneTabouguie/blog-internship.git
    ```
 2. **Aller dans le répertoire du projet :**
    ```bash
@@ -51,9 +51,9 @@ Ce projet est un **blog** dans lequel je partage mon expérience lors de mon pre
    ```
 
 4. **Ouvrir les pages :**
-   - **Page principale (Portfolio) :** [http://localhost:8000/home.php](http://localhost:8000/home.php)
-   - **Section Blog (Expérience de stage) :** [http://localhost:8000/blog.html](http://localhost:8000/blog.html)
-   - **Admin Panel (Gestion des articles) :** [http://localhost:8000/admin.php](http://localhost:8000/admin.php)
+   - **Page principale (Portfolio) :** [http://localhost:8000/home.php]
+   - **Section Blog (Expérience de stage) :** [http://localhost:8000/blog.html]
+   - **Admin Panel (Gestion des articles) :** [http://localhost:8000/admin.php]
 
 ## Utilisation
 - **Créer un Article :** Le tableau de bord admin permet d’écrire et de gérer les articles liés à mon expérience de stage.
