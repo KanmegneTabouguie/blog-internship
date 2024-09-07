@@ -43,7 +43,7 @@ Ce projet est un **blog** dans lequel je partage mon expérience lors de mon pre
    ```
 2. **Aller dans le répertoire du projet :**
    ```bash
-   cd finalportfolio
+   cd blog-internship
    ```
 3. **Lancer le serveur backend :**
    ```bash
