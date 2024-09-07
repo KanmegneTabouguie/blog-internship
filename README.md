@@ -39,11 +39,11 @@ Ce projet est un **blog** dans lequel je partage mon expérience lors de mon pre
 ## Installation et Configuration
 1. **Cloner le dépôt :**
    ```bash
-   git clone https://github.com/your-repo/blog-internship.git
+   git clone (https://github.com/KanmegneTabouguie/blog-internship.git)
    ```
 2. **Aller dans le répertoire du projet :**
    ```bash
-   cd blog-internship
+   cd finalportfolio
    ```
 3. **Lancer le serveur backend :**
    ```bash
@@ -60,18 +60,6 @@ Ce projet est un **blog** dans lequel je partage mon expérience lors de mon pre
 - **Modifier un Article :** Modifier directement un article via le tableau de bord admin.
 - **Supprimer un Article :** Retirer les articles obsolètes ou non désirés.
 
-## Structure des Fichiers
-```
-/project-root
-│
-├── /css           # Styles CSS personnalisés
-├── /js            # Fichiers JavaScript pour les opérations CRUD
-├── home.php       # Page principale (Portfolio)
-├── admin.php      # Tableau de bord administrateur
-├── blog.html      # Page blog publique
-├── posts.json     # Stocke les données des articles de blog
-└── savePosts.php  # Gère l'enregistrement des articles de blog
-```
 
 ## Leçons Clés Apprises
 - **Web Scraping :** Développement d’un outil automatisé avec **BeautifulSoup** pour extraire des données dynamiques, améliorant mes compétences en résolution de problèmes.
@@ -83,9 +71,3 @@ Ce projet est un **blog** dans lequel je partage mon expérience lors de mon pre
 - Migrer de JSON vers une base de données relationnelle (comme MySQL) pour une meilleure gestion des données.
 - Ajouter une pagination pour la gestion d’un grand nombre d’articles.
 
-## Licence
-Ce projet est sous licence MIT.
-
----
-
-N'hésite pas à personnaliser davantage si besoin !
